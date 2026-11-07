@@ -201,10 +201,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&trans      &trans          &mkp MB2        &kp UP_ARROW  &mkp MB1         &kp PG_UP    &trans   &kp N7  &kp N8  &kp N9  &kp N0    &trans
-&caps_word  &trans          &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &kp PG_DN    &kp N0   &kp N4  &kp N5  &kp N6  &kp APOS  &kp DEL
-&trans      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans       &trans   &kp N1  &kp N2  &kp N3  &kp INS   &trans
-                                            &kp LGUI      &trans           &kp SPACE    &kp RET  &mo 3   &trans
+&trans      &trans          &mkp MB2        &kp UP_ARROW  &mkp MB1         &kp PG_UP    &trans  &kp N7  &kp N8  &kp N9  &kp N0    &trans
+&caps_word  &trans          &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &kp PG_DN    &kp N0  &kp N4  &kp N5  &kp N6  &kp APOS  &kp DEL
+&trans      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans       &trans  &kp N1  &kp N2  &kp N3  &kp INS   &trans
+                                            &kp LGUI      &trans           &trans       &trans  &mo 3   &trans
             >;
         };
 
@@ -218,20 +218,20 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCL  &kp AMPS    &kp ASTRK    &kp DLLR   &kp PRCNT    &trans    &kp KP_EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans    &trans
-&trans  &trans    &kp DOLLAR  &kp PERCENT  &kp CARET  &kp GRAVE    &kp PLUS  &kp MINUS     &kp LBKT              &kp RBKT               &kp BSLH  &trans
-&trans  &trans    &kp EXCL    &kp AT       &kp POUND  &kp TILDE    &trans    &kp UNDER     &kp LBRC              &kp RBRC               &kp PIPE  &trans
-                              &kp LGUI     &mo 3      &trans       &trans    &trans        &trans
+&trans  &trans  &kp AMPS    &kp ASTRK    &kp DLLR   &kp PRCNT    &trans    &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans    &trans
+&trans  &trans  &kp DOLLAR  &kp PERCENT  &kp CARET  &kp GRAVE    &kp PLUS  &kp MINUS  &kp LBKT              &kp RBKT               &kp BSLH  &kp APOS
+&trans  &trans  &kp EXCL    &kp AT       &kp POUND  &kp TILDE    &trans    &kp UNDER  &kp LBRC              &kp RBRC               &kp PIPE  &trans
+                            &kp LGUI     &mo 3      &trans       &trans    &trans     &trans
             >;
         };
 
         ADJ {
             display-name = "System";
             bindings = <
-&trans  &kp F1        &kp F2        &kp F3        &kp F4      &kp F5            &kp F6  &kp F7  &kp F8  &kp F9  &kp F10      &trans
-&trans  &kp F11       &kp F12       &trans        &trans      &studio_unlock    &trans  &trans  &trans  &trans  &trans       &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR  &bt BT_CLR_ALL    &trans  &trans  &trans  &trans  &bootloader  &trans
-                                    &trans        &trans      &trans            &trans  &trans  &trans
+&trans  &kp F9  &kp F10  &kp F11  &kp F12  &kp F5            &trans  &trans      &trans      &trans         &trans       &trans
+&trans  &kp F5  &kp F6   &kp F7   &kp F8   &studio_unlock    &trans  &trans      &trans      &bt BT_DISC 0  &trans       &trans
+&trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans            &trans  &bt BT_NXT  &bt BT_PRV  &bt BT_SEL 0   &bootloader  &trans
+                         &trans   &trans   &trans            &trans  &trans      &trans
             >;
         };
 
